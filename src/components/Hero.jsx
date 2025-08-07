@@ -18,7 +18,7 @@ export default function Hero() {
                     Software Engineer & UI/UX Designer
                 </p>
                 <p  className="lg:text-xl text-sm md:max-w-[75ch] max-w-[50ch] mb-10">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur dignissimos beatae optio accusamus magni ducimus modi soluta maxime! Hic nobis sunt excepturi eos molestiae similique cumque nam consequuntur pariatur.
+                Determined professional with a strong background in software engineering and a passion for design. Quick learner and a team player, always ready to collaborate with others to achieve the expected results without hesitating.
                 </p>
                 <div  className="flex flex-row gap-4 md:text-lg text-small text-gray-300 mb-8">
                     <button className="px-6 md:py-3 py-1 bg-accent text-white rounded-lg hover:bg-secondary transition duration-300 text-sm lg:text-xl">

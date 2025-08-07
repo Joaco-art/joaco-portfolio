@@ -12,23 +12,23 @@ export default function App() {
   return (
     <>
 
-    <div className='bg-gradient-to-r from-black via-gray-950 to-black'>
+      <div className='bg-gradient-to-r from-black via-gray-950 to-black'>
 
-      <header>
-        <nav>
-        <Navbar name="Joaco" first="About" second="Services" third="Projects" fourth="Contact"/>
-        </nav>
-      </header>
+        <header>
+          <nav>
+          <Navbar name="Joaco" first="About" second="Services" third="Projects" fourth="Contact"/>
+          </nav>
+        </header>
 
         <main className='h-screen lg:overflow-y-scroll lg:snap-y lg:snap-mandatory lg:scroll-smooth'>
-          <Hero/>
-          <About/>
-          <Services/>
-          <Projects/>
-          <Contact/>
+            <Hero/>
+            <About/>
+            <Services/>
+            <Projects/>
+            <Contact/>
         </main>
-    </div>
-    
+      </div>
+      
     </>
   )
 }
