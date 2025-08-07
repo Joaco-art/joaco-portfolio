@@ -6,13 +6,11 @@ export default function Navbar(navbarProps) {
     
 
     return (
-        <nav className="fixed bg-black w-screen h-32 md:p-10 p-5 flex justify-center items-center border-b-4 border-transparent z-10">
+        <nav className="fixed bg-transparent w-screen h-32 md:p-10 p-5 flex justify-center items-center border-b-4 border-transparent z-10">
 
             <ul className="relative flex w-screen gap-5 text-xl z-10 items-center">
                 <li className="mr-auto ml-10 cursor-pointer">
-                    <span className="hidden md:inline">{navbarProps.name}</span>
-                    <span className="md:hidden">Joaco</span>
-                    
+                    <span className="hidden md:inline">{navbarProps.name}</span>     
                 </li>
 
                 {/* Icono hamburguesa animado solo visible en mobile */}
@@ -29,21 +27,21 @@ export default function Navbar(navbarProps) {
                 {/* Menú normal en md+ */}
                 <div className="md:flex md:flex-row hidden absolute right-0 gap-10 h-full">
                     <li className="relative group cursor-pointer" >
-                        <span className="relative z-10 bottom-1 group-hover:text-primary transition-colors duration-300">{navbarProps.atr}</span>
+                        <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.first}</span>
                         <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                     </li>
                     <li className="relative group cursor-pointer" >
-                        <span className="relative z-10 bottom-1 group-hover:text-primary transition-colors duration-300">{navbarProps.atrr}</span>
+                        <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.second}</span>
                         <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                         
                     </li>
                     <li className="relative group cursor-pointer">
-                        <span className="relative z-10 bottom-1 group-hover:text-primary transition-colors duration-300">{navbarProps.atrrr}</span>
+                        <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.third}</span>
                         <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                        
                     </li>
                     <li className="relative group cursor-pointer mr-10">
-                        <span className="relative z-10 bottom-1 group-hover:text-primary transition-colors duration-300">{navbarProps.atrrrr}</span>
+                        <span className="relative z-10 bottom-1  transition-colors duration-300">{navbarProps.fourth}</span>
                         <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                     </li>
                 </div>

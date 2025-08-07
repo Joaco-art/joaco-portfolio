@@ -1,5 +1,9 @@
 import Hero from './components/Hero.jsx'
 import Navbar from './components/Navbar.jsx'
+import About from './components/About.jsx'
+import Services from './components/Services.jsx'
+import Projects from './components/Projects.jsx'
+import Contact from './components/Contact.jsx'
 import './App.css'
 
 export default function App() {
@@ -12,12 +16,16 @@ export default function App() {
 
       <header>
         <nav>
-        <Navbar name="Joaco" atr="About" atrr="Services" atrrr="Projects" atrrrr="Contact"/>
+        <Navbar name="Joaco" first="About" second="Services" third="Projects" fourth="Contact"/>
         </nav>
       </header>
 
         <main className='h-screen lg:overflow-y-scroll lg:snap-y lg:snap-mandatory lg:scroll-smooth'>
           <Hero/>
+          <About/>
+          <Services/>
+          <Projects/>
+          <Contact/>
         </main>
     </div>
     

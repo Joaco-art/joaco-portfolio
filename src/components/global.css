@@ -1,0 +1,46 @@
+.card-border-animation {
+    position: relative;
+    z-index: 0;
+    border-radius: 0.75rem; /* rounded-xl */
+    overflow: hidden;
+  }
+  
+  .card-border-animation::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(270deg, #9333ea, #3b82f6, #10b981, #9333ea);
+    background-size: 600% 600%;
+    animation: animate-border 5s linear infinite;
+    z-index: -1;
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+  }
+  
+  @keyframes animate-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animated-gradient-text {
+    background: linear-gradient(270deg, #9333ea, #3b82f6, #10b981, #9333ea);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-border 10s linear infinite;
+  }
