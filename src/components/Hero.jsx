@@ -11,7 +11,7 @@ export default function Hero() {
                 <p className="xl:text-lg text-sm font-semibold">
                     Welcome to my portfolio!
                 </p>
-                <h1  className="xxl:text-7xl lg:text-6xl text-3xl font-bold text-white mb-4">
+                <h1  className="xxl:text-7xl lg:text-6xl text-3xl font-bold text-white mb-4 text-center animated-gradient-text-secondary">
                     Joaquín Farias Ovelar
                 </h1>
                 <p  className="xxl:text-4xl lg:text-2xl text-xl font-bold text-primary pb-4">

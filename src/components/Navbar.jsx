@@ -15,7 +15,7 @@ export default function Navbar(navbarProps) {
 
                 {/* Icono hamburguesa animado solo visible en mobile */}
                 <button
-                    className="lg:hidden block focus:outline-none mr-5 relative w-8 h-6"
+                    className="lg:hidden block focus:outline-none mr-2 relative w-4 h-2"
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
                 >

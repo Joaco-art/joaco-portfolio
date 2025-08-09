@@ -45,6 +45,14 @@
     animation: animate-border 10s linear infinite;
   }
 
+  .animated-gradient-text-secondary {
+    background: linear-gradient(270deg, #720c8b, #06aa22, #10b981, #9333ea);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-border 10s linear infinite;
+  }
+
   /* Ocultar barra de scroll pero mantener funcionalidad */
   .scrollbar-hide {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */

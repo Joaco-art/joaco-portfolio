@@ -4,6 +4,7 @@ import About from './components/About.jsx'
 import Services from './components/Services.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
+import Frameworks from './components/Frameworks.jsx'
 import './App.css'
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
             <Hero/>
             <About/>
             <Services/>
+            <Frameworks/>
             <Projects/>
             <Contact/>
         </main>
