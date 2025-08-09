@@ -56,7 +56,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className='relative flex flex-col snap-start items-center justify-center h-auto w-screen gap-10 px-5 py-0 p-4 md:p-10'>
+        <section id="contact" className='flex flex-col snap-start items-center justify-center h-auto w-screen md:gap-10 gap-2 px-5 py-0 p-4 md:p-10'>
             <h3 className='text-4xl font-bold text-primary drop-shadow-lg'>Do you want to work with me?</h3>
             <p className='text-lg text-gray-300 max-w-2xl text-center'>Are you seeking for a developer? I'm always looking for new projects and collaborations. If you have an idea or project in mind, feel free to contact me.</p>
 
@@ -129,8 +129,8 @@ export default function Contact() {
                 </button>
             </form>
 
-            <p className="md:text-center text-pretty text-sm">Anyway, If you feel more comfortable, you can contact me through my email: <a href="mailto:joaquinfariasovelar2503@gmail.com" className="text-accent underline">joaquinfariasovelar2503@gmail.com</a></p>
-            <p className="absolute bottom-0 text-center text-xs">This proyect is hereby subjected to MIT license. &#169; 2025 Joaquín Farias Ovelar. </p>
+            <p className="md:text-center text-pretty text-xs">Anyway, If you feel more comfortable, you can contact me through my email: <a href="mailto:joaquinfariasovelar2503@gmail.com" className="text-accent underline">joaquinfariasovelar2503@gmail.com</a></p>
+            <p className="bottom-0 text-center text-xs">This proyect is hereby subjected to MIT license. &#169; 2025 Joaquín Farias Ovelar. </p>
 
 
             {showModal && (

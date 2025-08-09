@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="flex md:flex-row md:snap-start flex-col-reverse md:min-h-screen h-auto w-screen overflow-hidden justify-center items-center p-4 md:mt-20 mt-0 bg-transparent"
+            className="flex md:flex-row md:snap-start flex-col-reverse md:h-screen h-auto w-screen overflow-hidden justify-center items-center p-4 md:mt-20 mt-0 "
         >
             <div className="flex flex-col md:items-start items-center justify-center md:w-[50%] w-full h-full md:gap-5 gap-2 p-4 md:p-8 rounded-lg">
                 <p className="xl:text-lg text-sm font-semibold">
