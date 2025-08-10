@@ -11,13 +11,13 @@ export default function Hero() {
                 <p className="xl:text-lg text-sm font-semibold">
                     Welcome to my portfolio!
                 </p>
-                <h1  className="xxl:text-7xl lg:text-6xl text-3xl font-bold text-white mb-4 text-center animated-gradient-text-secondary">
+                <h1  className="xxl:text-7xl lg:text-6xl text-3xl font-bold text-white mb-4 text-pretty animated-gradient-text-secondary">
                     Joaquín Farias Ovelar
                 </h1>
                 <p  className="xxl:text-4xl lg:text-2xl text-xl font-bold text-primary pb-4">
                     Software Engineer & UI/UX Designer
                 </p>
-                <p  className="lg:text-xl text-sm md:max-w-[75ch] max-w-[50ch] mb-10">
+                <p  className="lg:text-xl text-sm md:max-w-[75ch] max-w-[50ch] mb-10 text-pretty">
                 Determined professional with a strong background in software engineering and a passion for design. Quick learner and a team player, always ready to collaborate with others to achieve the expected results without hesitating.
                 </p>
                 <div  className="flex flex-row gap-4 md:text-lg text-small text-gray-300 mb-8">
