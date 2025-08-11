@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Link} from 'react-router-dom'
 
 export default function Navbar(navbarProps) {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,8 +10,9 @@ export default function Navbar(navbarProps) {
         <nav className="fixed bg-transparent w-screen h-32 md:p-10 p-5 flex justify-center items-center border-b-4 border-transparent z-10">
 
             <ul className="relative flex w-screen gap-5 text-xl z-10 items-center">
-                <li className="mr-auto ml-10 cursor-pointer">
-                    <span className="hidden lg:inline">{navbarProps.name}</span>     
+                <li className="relative group mr-auto ml-10 cursor-pointer">
+                    <Link to="/" className="relative z-10 bottom-1 transition-colors duration-300"><span className="relative z-10 bottom-1 transition-colors duration-300 hidden lg:inline">{navbarProps.name}</span>  </Link> 
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>                     
                 </li>
 
                 {/* Icono hamburguesa animado solo visible en mobile */}
@@ -27,21 +29,24 @@ export default function Navbar(navbarProps) {
                 {/* Menú normal en lg+ */}
                 <div className="lg:flex lg:flex-row hidden absolute right-0 gap-10 h-full mr-10">
                     <li className="relative group cursor-pointer" >
-                        <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.first}</span>
+                        <Link to="/about" className="relative z-10 bottom-1 transition-colors duration-300"><span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.first}</span></Link>
                         <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                     </li>
+
                     <li className="relative group cursor-pointer" >
-                        <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.second}</span>
+                    <Link to="/services" className="relative z-10 bottom-1 transition-colors duration-300"><span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.second}</span></Link>
                         <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                         
                     </li>
+
                     <li className="relative group cursor-pointer">
-                        <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.third}</span>
+                        <Link to="/projects" className="relative z-10 bottom-1 transition-colors duration-300"><span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.third}</span></Link>
                         <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                        
                     </li>
+
                     <li className="relative group cursor-pointer mr-10">
-                        <span className="relative z-10 bottom-1  transition-colors duration-300">{navbarProps.fourth}</span>
+                        <Link to="/contact" className="relative z-10 bottom-1  transition-colors duration-300"><span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.fourth}</span></Link>
                         <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                     </li>
                 </div>
@@ -56,10 +61,22 @@ export default function Navbar(navbarProps) {
                         >
                             &times;
                         </button>
-                        <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false);}}>{navbarProps.first}</li>
-                        <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false); }}>{navbarProps.second}</li>
-                        <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false); }}>{navbarProps.third}</li>
-                        <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false); }}>{navbarProps.fourth}</li>
+                        <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false);}}>
+                           <Link to="/about">{navbarProps.first}</Link>
+                        </li>
+
+                        <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false); }}>
+                            <Link to="/services">{navbarProps.second}</Link>
+                        </li>
+
+                        <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false); }}>
+                            <Link to="/projects">{navbarProps.third}</Link>
+                        </li>
+
+                        <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false); }}>
+                            <Link to="/contact">{navbarProps.fourth}</Link>
+                        </li>
+
                     </div>
                 )}
             </ul>
