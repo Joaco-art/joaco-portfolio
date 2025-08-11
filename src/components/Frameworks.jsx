@@ -39,7 +39,7 @@ export default function Frameworks() {
     return (
         <section id="frameworks" className="flex flex-col lg:snap-start  lg:h-screen h-auto items-center justify-center w-screen overflow-hidden p-4 md:p-10">
 
-            <h2 className="lg:text-6xl text-3xl mt-10 md:mt-0 font-bold text-center animated-gradient-text">Frameworks</h2>
+            <h2 className="lg:text-6xl text-3xl mt-10 md:mt-0 font-bold text-center animated-gradient-text">Stack</h2>
             <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-8 md:gap-5 w-[70%] md:w-[50%] lg:h-[80%] h-auto bg-gradient-to-br from-black to-gray-950 rounded-xl md:mt-20 mt-10 shadow-2xl border-2 border-primary p-10 md:p-8 place-items-center">
                 {skills.map((skill, index) => (
                     <div key={index} className="flex items-center justify-center">

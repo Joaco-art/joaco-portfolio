@@ -5,6 +5,7 @@ import Services from './components/Services.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import Frameworks from './components/Frameworks.jsx'
+import { Element } from 'react-scroll'
 import './App.css'
 
 export default function App() {
@@ -22,12 +23,24 @@ export default function App() {
         </header>
 
         <main className='h-screen lg:overflow-y-scroll lg:snap-y lg:snap-mandatory lg:scroll-smooth'>
-            <Hero/>
-            <About/>
-            <Services/>
-            <Frameworks/>
-            <Projects/>
-            <Contact/>
+            <Element name="hero">
+              <Hero/>
+            </Element>
+            <Element name="about">
+              <About/>
+            </Element>
+            <Element name="services">
+              <Services/>
+            </Element>
+            <Element name="frameworks">
+              <Frameworks/>
+            </Element>
+            <Element name="projects">
+              <Projects/>
+            </Element>
+            <Element name="contact">
+              <Contact/>
+            </Element>
         </main>
       </div>
       
