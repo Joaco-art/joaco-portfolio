@@ -1,18 +1,18 @@
 import { useState } from "react";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Navbar(navbarProps) {
     const [menuOpen, setMenuOpen] = useState(false);
    
-    
-
     return (
         <nav className="fixed bg-transparent w-screen h-32 md:p-10 p-5 flex justify-center items-center border-b-4 border-transparent z-10">
 
             <ul className="relative flex w-screen gap-5 text-xl z-10 items-center">
                 <li className="relative group mr-auto ml-10 cursor-pointer">
-                    <Link to="hero" spy={true} smooth={true} duration={500} offset={50}><span className="relative z-10 bottom-1 transition-colors duration-300 hidden lg:inline">{navbarProps.name}</span></Link>
-                    <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>   
+                    <Link to="hero" spy={true} smooth={true} duration={500} offset={50}>
+                        <span className="relative z-10 bottom-1 transition-colors duration-300 hidden lg:inline">{navbarProps.name}</span>
+                    </Link>
+                    <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>   
                 </li>
 
                 {/* Icono hamburguesa animado solo visible en mobile */}
@@ -28,22 +28,28 @@ export default function Navbar(navbarProps) {
 
                 {/* Menú normal en lg+ */}
                 <div className="lg:flex lg:flex-row hidden absolute right-0 gap-10 h-full mr-10">
-                    <li className="relative group cursor-pointer" >
-                        <Link to="about" spy={true} smooth={true} duration={500} offset={100}><span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.first}</span></Link>
-                        <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
-                    </li>
-                    <li className="relative group cursor-pointer" >
-                        <Link to="services" spy={true} smooth={true} duration={500} offset={100}><span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.second}</span></Link>
-                        <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
-                        
+                    <li className="relative group cursor-pointer">
+                        <Link to="about" spy={true} smooth={true} duration={500} offset={50}>
+                            <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.first}</span>
+                        </Link>
+                        <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                     </li>
                     <li className="relative group cursor-pointer">
-                        <Link to="projects" spy={true} smooth={true} duration={500} offset={100}><span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.third}</span></Link>
-                        <div  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
-                       
+                        <Link to="services" spy={true} smooth={true} duration={500} offset={50}>
+                            <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.second}</span>
+                        </Link>
+                        <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
+                    </li>
+                    <li className="relative group cursor-pointer">
+                        <Link to="projects" spy={true} smooth={true} duration={500} offset={50}>
+                            <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.third}</span>
+                        </Link>
+                        <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                     </li>
                     <li className="relative group cursor-pointer mr-10">
-                        <Link to="contact" spy={true} smooth={true} duration={500} offset={100}><span className="relative z-10 bottom-1  transition-colors duration-300">{navbarProps.fourth}</span></Link>
+                        <Link to="contact" spy={true} smooth={true} duration={500} offset={50}>
+                            <span className="relative z-10 bottom-1 transition-colors duration-300">{navbarProps.fourth}</span>
+                        </Link>
                         <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300 ease-out"/>
                     </li>
                 </div>
@@ -68,7 +74,7 @@ export default function Navbar(navbarProps) {
                             <Link to="projects" spy={true} smooth={true} duration={500} offset={50}>{navbarProps.third}</Link>
                         </li>
                         <li className="hover:underline duration-300 cursor-pointer text-white text-2xl" onClick={() => {setMenuOpen(false); }}>
-                            <Link to="contact" spy={true} smooth={true} duration={500} offset={100}>{navbarProps.fourth}</Link>
+                            <Link to="contact" spy={true} smooth={true} duration={500} offset={50}>{navbarProps.fourth}</Link>
                         </li>
                     </div>
                 )}

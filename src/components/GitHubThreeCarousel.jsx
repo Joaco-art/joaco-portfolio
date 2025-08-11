@@ -167,7 +167,9 @@ export default function GitHubThreeCarousel({ username }) {
             newMat.transparent = false;
             try {
               oldMat.dispose();
-            } catch (e) {}
+            } catch (error) {
+              console.warn("Error disposing old material:", error);
+            }
           }
         };
         fade();
